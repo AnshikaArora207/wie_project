@@ -6,6 +6,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -13,6 +14,10 @@ def index():
 def district():
     # Add logic to handle district related requests
     return render_template('district.html')
+@app.route('/report')
+def report():
+    # Add logic to handle district related requests
+    return render_template('report.html')
 
 @app.route('/state')
 def state():

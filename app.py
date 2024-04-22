@@ -14,6 +14,9 @@ def index():
 def district():
     # Add logic to handle district related requests
     return render_template('district.html')
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 @app.route('/report')
 def report():
     # Add logic to handle district related requests
